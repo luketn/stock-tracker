@@ -7,6 +7,5 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@master
-      - name: Build native executable and upload it as an artifact
-        uses: "maxday/quarkus-native-build-docker-action@1"
-          outputName: stock-tracker
+      - name: Build a Quarkus native application
+        uses: maxday/quarkus-native-build-docker-action@1
